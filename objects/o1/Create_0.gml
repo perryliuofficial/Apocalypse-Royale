@@ -1,10 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.rescue = false;
-global.survived = 0;
+global.rescued = 0;
 global.alive = 0
 global.dead = 0;
-
+global.menu = 0;
+global.pause = false;
+global.bomb=0;
+global.supply=0;
+global.movement=0;
+global.heli=false;
+global.win=false;
+global.cameramove = false;
+global.camerafollowx = 0;
+global.camerafollowy = 0;
 randomize();
 people = irandom_range(10,20);
 global.alive = people;
@@ -28,4 +37,4 @@ for (i = 0; i < enemy; i += 1){
 //instance_create_layer(x,y,"Instances",oRain);
 alarm[0]=room_speed*20;
 alarm[1]=room_speed*30;
-alarm[2]=room_speed*40;
+//alarm[2]=room_speed*40;

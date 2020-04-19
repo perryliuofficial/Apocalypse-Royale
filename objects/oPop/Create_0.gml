@@ -10,5 +10,6 @@ movespeed = random_range(0.01,0.1);
 speed = movespeed;
 action="Determining Action";
 printaction="Determining Action";
+cameramarked = false;
 alarm[2]=1;
 alarm[3]=1;
