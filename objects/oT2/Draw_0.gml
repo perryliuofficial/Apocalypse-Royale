@@ -22,9 +22,9 @@ draw_set_font(-1);
 draw_set_color(c_black);
 draw_set_halign(-1);
 draw_set_valign(-1);
-draw_rectangle(180,10,890,100,false);
+draw_rectangle(180+82,10,890+82,100,false);
 draw_set_color(c_white);
-draw_text_ext(190,10,"Supply drops can help replenish ammo and health. Drop a few to help out the remaining survivors. After all, it won't be much of a rescue if everyone's dead.",15,700);
+draw_text_ext(190+82,10,"Supply drops can help replenish ammo and health. Drop a few to help out the remaining survivors. After all, it won't be much of a rescue if everyone's dead.",15,700);
 
 
 draw_set_color(-1);

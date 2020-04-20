@@ -3,9 +3,9 @@
 if global.pause = false {
 	// if another person is nearby shoot them
 	target=instance_nth_nearest(x,y,oPop,2)
-	if ammo >0 and distance_to_object(target) <120{
-		action="Attacking Contestant";
-		printaction="Attacking Contestant";
+	if ammo >0 and distance_to_object(target) <110{
+		action="Shooting Contestant";
+		printaction="Shooting Contestant";
 		var bullet = instance_create_layer(x,y,"Instances",oBullet);
 		bullet.targetx = target.x;
 		bullet.targety = target.y;

@@ -50,7 +50,7 @@ if global.rescue=true and global.heli=false and global.alive=1{
 
 // Extraction
 if keyboard_check_pressed(ord("2")){
-	if global.rescue = false{instance_create_layer(mouse_x,mouse_y,"Background",oRescue)}
+	if global.rescue = false and !(instance_exists(oRescueTEMP)) {instance_create_layer(mouse_x,mouse_y,"Background",oRescueTEMP)}
 }
 
 if global.win = true {global.rT1 = true}

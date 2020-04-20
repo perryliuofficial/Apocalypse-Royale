@@ -5,7 +5,7 @@ if mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, se
 		triggered = true;
 		global.menu = 2;
 	}
-	if global.rescue = false{
-		instance_create_layer(mouse_x,mouse_y,"Background",oRescue);
+	if global.rescue = false and !(instance_exists(oRescueTEMP)){
+		instance_create_layer(mouse_x,mouse_y,"Background",oRescueTEMP);
 	}
 }

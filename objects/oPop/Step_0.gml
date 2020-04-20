@@ -25,6 +25,32 @@ if heart <=0 {
 	global.alive-=1;
 	effect_create_above(ef_flare, x, y, 1, c_red);
 }
+/*
+// Bomb damange
+if place_meeting(x, y, oBoom) and oBoom.awwshit = true{
+	heart -=15;
+	if heart <=0{
+		instance_destroy();
+	// Add to TV points if within camera radius
+		if distance_to_object(oCircle) < 150 {
+			global.TVscore +=1000;
+			global.news10 = global.news9;
+			global.news9 = global.news8;
+			global.news8 = global.news7;
+			global.news7 = global.news6;
+			global.news6 = global.news5;
+			global.news5 = global.news4;
+			global.news4 = global.news3;
+			global.news3 = global.news2;
+			global.news2 = global.news1;
+			global.news1 = "Human death by bomb +1000";
+		}
+	global.dead +=1;
+	global.alive-=1;
+	effect_create_above(ef_flare, x, y, 1, c_red);	
+	}
+}
+*/
 
 // Slow down if over obstacles
 if position_meeting(x, y, oSLOW){speed = movespeed*0.3;} else {speed = movespeed;}
@@ -55,6 +81,14 @@ else {
 	action="Roaming";
 }
 
+if instance_exists(oMove) {
+	nearestbeacon = instance_nearest(x,y,oMove);
+	if distance_to_object(nearestbeacon) < 300{
+		move_towards_point(nearestbeacon.x,nearestbeacon.y,speed);
+		action="Locating Beacon";
+	}
+}
+
 //determine if closes entity is human or zombie
 closesthuman = distance_to_object(instance_nth_nearest(x,y,oPop,2));
 closestzombie=instance_nearest(x,y,oZom);
@@ -66,13 +100,11 @@ if distance_to_object(closesthuman) < distance_to_object(closestzombie) {
 	if confrontation = 2{
 		move_towards_point(closesthuman.x,closesthuman.y,speed*1.3);
 		action="Engaging Contestant";
-		printaction="Engaging Contestant";
 	}
 	//or run away
 	else if confrontation = 1{
 		move_towards_point(closesthuman.x,closesthuman.y,-speed*1.2);
 		action="Escaping Contestant";
-		printaction="Escaping Contestant";
 	}
 }}
 //if zombie is closest

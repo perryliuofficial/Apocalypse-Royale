@@ -15,6 +15,12 @@
 	global.rT1 = map[? "rT1"];
 	global.rT2 = map[? "rT2"];
 	global.rT3 = map[? "rT3"];
+	global.rT4 = map[? "rT4"];
+	global.rT5 = map[? "rT5"];
+	
+	global.rI1 = map[? "rI1"];
+	global.rI2 = map[? "rI2"];
+	global.rI3 = map[? "rI3"];
 	
 	ds_map_destroy(map);
 }*/
@@ -22,8 +28,15 @@
 	global.FPS = false;	
 	global.AUDIO = true;
 	global.SCREEN = true;
+	
 	global.rT1 = false;
 	global.rT2 = false;
 	global.rT3 = false;
+	global.rT4 = false;
+	global.rT5 = false;
+	
+	global.rI1 = false;
+	global.rI2 = false;
+	global.rI3 = false;
 //}
 room_goto(rMain);

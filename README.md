@@ -7,4 +7,5 @@ Inspired by Yahtzee Croshaw's [BRTV](https://yzcroshaw.itch.io/brtv).
 ### Acknowledgements
 - `Sprites` **Kyst** by [Adam Saltsman](https://adamatomic.itch.io/kyst) *Public Domain*
 - `Sprites` **heli-animated** by [ruberboy](https://opengameart.org/content/heli-animated) *CC-BY 3.0*
-- `Code` **instance_nth_nearest** by [GMLScript's xot](https://www.gmlscripts.com/script/instance_nth_nearest) *Non-Attribution Royalty Free*
+- `Sprites` **2D Explosion Animations** by [Sinestesia](https://opengameart.org/content/2d-explosion-animations-frame-by-frame) *Royalty Free Non-Attribution*
+- `Code` **instance_nth_nearest** by [GMLScript's xot](https://www.gmlscripts.com/script/instance_nth_nearest) *Royalty Free Non-Attribution*

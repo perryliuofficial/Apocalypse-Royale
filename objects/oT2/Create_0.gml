@@ -7,7 +7,7 @@ global.dead = 0;
 global.menu = 0;
 global.pause = false;
 global.bomb=0;
-global.supply=0;
+global.supply=10;
 global.movement=0;
 global.heli=false;
 global.win=false;
@@ -43,6 +43,6 @@ alarm[1]=room_speed*30;
 */
 var TEMPSTUFF1 = instance_create_layer(1088,576,"Instances",oPop);
 TEMPSTUFF1.ammo = 0;
+TEMPSTUFF1.movespeed = 0.1;
 
-var TEMPSTUFF = instance_create_layer(1472,546,"Instances",oRescue);
-TEMPSTUFF.static = true;
+instance_create_layer(1472,546,"Instances",oRescue);
