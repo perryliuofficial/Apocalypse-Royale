@@ -21,6 +21,8 @@
 	global.rI1 = map[? "rI1"];
 	global.rI2 = map[? "rI2"];
 	global.rI3 = map[? "rI3"];
+	global.rI4 = map[? "rI4"];
+	global.rI5 = map[? "rI5"];
 	
 	ds_map_destroy(map);
 }*/
@@ -38,5 +40,7 @@
 	global.rI1 = false;
 	global.rI2 = false;
 	global.rI3 = false;
+	global.rI4 = false;
+	global.rI5 = false;
 //}
 room_goto(rMain);

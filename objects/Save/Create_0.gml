@@ -15,6 +15,8 @@ map[? "rT5"] = global.rT5;
 map[? "rI1"] = global.rI1;
 map[? "rI2"] = global.rI2;
 map[? "rI3"] = global.rI3;
+map[? "rI4"] = global.rI4;
+map[? "rI5"] = global.rI5;
 
 ds_map_secure_save(map,"GameOptions");
 ds_map_destroy(map);

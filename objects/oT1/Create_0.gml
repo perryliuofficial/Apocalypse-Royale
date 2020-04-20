@@ -39,3 +39,9 @@ for (i = 0; i < enemy; i += 1){
 alarm[0]=room_speed*20;
 alarm[1]=room_speed*30;
 //alarm[2]=room_speed*40;
+*/
+spawnweather = irandom(6);
+switch(spawnweather){
+	case 1: instance_create_layer(x,y,"Overlay",oFog);exit;
+	case 2: instance_create_layer(x,y,"Overlay",oRain);exit;
+}

@@ -46,3 +46,9 @@ alarm[1]=room_speed*30;
 //TEMPSTUFF1.movespeed = 0.1;
 
 //instance_create_layer(1472,546,"Instances",oRescue);
+
+spawnweather = irandom(6);
+switch(spawnweather){
+	case 1: instance_create_layer(x,y,"Overlay",oFog);exit;
+	case 2: instance_create_layer(x,y,"Overlay",oRain);exit;
+}

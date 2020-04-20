@@ -6,19 +6,22 @@ global.alive = 0
 global.dead = 0;
 global.menu = 0;
 global.pause = false;
-global.bomb=10;
-global.supply=10;
-global.movement=10;
+global.bomb=3;
+global.supply=20;
+global.zomspawn=100;
+global.movement=99;
 global.heli=false;
 global.win=false;
 global.cameramove = false;
 global.camerafollowx = 0;
 global.camerafollowy = 0;
+missiontimer = 0;
 randomize();
 people = irandom_range(10,20);
-//people = 1;
+//people = 20;
 global.alive = people;
-enemy = irandom_range(55,75);
+enemy = irandom_range(150,200);
+
 for (i = 0; i < people; i += 1){
 	spawnx = random_range(0,room_width);
 	spawny = random_range(0,room_height);
@@ -26,6 +29,7 @@ for (i = 0; i < people; i += 1){
 }
 
 //determine to spawn left, right, top, bottom of screen
+
 for (i = 0; i < enemy; i += 1){
 	randomize();
 	spawnloc = irandom_range(1,4);
@@ -35,7 +39,8 @@ for (i = 0; i < enemy; i += 1){
 	if spawnloc=4{spawnx=random_range(-5,room_height+5);spawny=room_height+5}
 	instance_create_layer(spawnx, spawny, "Instances",oZom);	
 }
-//instance_create_layer(x,y,"Instances",oRain);
+
+//instance_create_layer(x,y,"Instances",oFog);
 alarm[0]=room_speed*20;
 alarm[1]=room_speed*30;
 //alarm[2]=room_speed*40;
@@ -46,9 +51,3 @@ alarm[1]=room_speed*30;
 //TEMPSTUFF1.movespeed = 0.1;
 
 //instance_create_layer(1472,546,"Instances",oRescue);
-
-spawnweather = irandom(6);
-switch(spawnweather){
-	case 1: instance_create_layer(x,y,"Overlay",oFog);exit;
-	case 2: instance_create_layer(x,y,"Overlay",oRain);exit;
-}

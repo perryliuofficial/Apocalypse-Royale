@@ -44,7 +44,6 @@ for (i = 0; i < enemy; i += 1){
 	if spawnloc=4{spawnx=random_range(-5,room_height+5);spawny=room_height+5}
 	instance_create_layer(spawnx, spawny, "Instances",oZom);	
 }
-instance_create_layer(x,y,"Instances",oRain);
 alarm[0]=room_speed*20;
 alarm[1]=room_speed*30;
 //alarm[2]=room_speed*40;
@@ -55,3 +54,9 @@ alarm[1]=room_speed*30;
 //TEMPSTUFF1.movespeed = 0.1;
 
 //instance_create_layer(1472,546,"Instances",oRescue);
+
+spawnweather = irandom(6);
+switch(spawnweather){
+	case 1: instance_create_layer(x,y,"Overlay",oFog);exit;
+	case 2: instance_create_layer(x,y,"Overlay",oRain);exit;
+}
