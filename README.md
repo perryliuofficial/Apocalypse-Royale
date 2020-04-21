@@ -14,3 +14,5 @@ Inspired by Yahtzee Croshaw's [BRTV](https://yzcroshaw.itch.io/brtv).
 - `SFX` **Unicom One Way Airport Radio Communication** by [freesfx.co.uk](https://freesfx.co.uk/Category/Aquatic/23) *Royalty Free Attribution*
 - `SFX` **Small Wood Crash** by [freesfx.co.uk](https://freesfx.co.uk/Category/Wood/244) *Royalty Free Attribution*
 - `SFX` **Calm ocean waves break onto shore 1** by [zapsplat.com](https://www.zapsplat.com/?s=ocean&post_type=music&sound-effect-category-id=) *Royalty Free Attribution*
+- `SFX` **Rain sound** by [soundbible.com](http://soundbible.com/1999-Rain.html) *Royalty Free Attribution*
+- `SFX` **Wind sound** by [soundbible.com](http://soundbible.com/1810-Wind.html) *Royalty Free Attribution*
