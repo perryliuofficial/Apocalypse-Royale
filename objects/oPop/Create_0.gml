@@ -14,3 +14,6 @@ cameramarked = false;
 alarm[2]=1;
 alarm[3]=1;
 alarm[4]=1;
+
+roamdistance1 = random_range(-15,15);
+roamdistance2 = random_range(-15,15);
