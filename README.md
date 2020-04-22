@@ -3,6 +3,8 @@ The zombie apocalypse is here and the only one willing to pay for a rescue missi
 
 Inspired by Yahtzee Croshaw's [BRTV](https://yzcroshaw.itch.io/brtv).
 
+Playable at: https://perryliuofficial.itch.io/apocalypse-royale
+
 ![Screenshot](/Screenshot1.jpg)
 
 ### Acknowledgements
