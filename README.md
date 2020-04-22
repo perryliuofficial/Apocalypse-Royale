@@ -5,7 +5,7 @@ Inspired by Yahtzee Croshaw's [BRTV](https://yzcroshaw.itch.io/brtv).
 
 Playable at: https://perryliuofficial.itch.io/apocalypse-royale
 
-![Screenshot](/Screenshot1.jpg)
+![Screenshot](/Screenshot1.png)
 
 ### Acknowledgements
 - `Sprites` **Kyst** by [Adam Saltsman](https://adamatomic.itch.io/kyst) *Public Domain*
