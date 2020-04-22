@@ -11,7 +11,7 @@ if global.pause = true {
 	draw_text(room_width/2,room_height/2,"GAME PAUSED");
 }
 
-if global.win = true and printtimer <= 180{
+if global.win = true {
 	draw_set_color(c_green);
 	draw_text(room_width/2,800,"Level Complete");
 	draw_text(room_width/2,850,"Esc to Quit Level");

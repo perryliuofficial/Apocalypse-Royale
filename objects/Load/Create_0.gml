@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*if file_exists("GameOptions"){
+if file_exists("GameOptions"){
 	var map = ds_map_secure_load("GameOptions");
 
 	global.FPS = map[? "FPS"];
@@ -31,8 +31,8 @@
 	global.rP1 = map[? "rP5"];
 	
 	ds_map_destroy(map);
-}*/
-//else{
+}
+else{
 	global.FPS = false;	
 	global.AUDIO = true;
 	global.SCREEN = true;
@@ -54,5 +54,5 @@
 	global.rP3 = false;
 	global.rP4 = false;
 	global.rP5 = false;
-//}
+}
 room_goto(rMain);

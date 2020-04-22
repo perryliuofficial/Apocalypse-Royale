@@ -5,7 +5,8 @@ target = instance_nearest(x,y,ofinalmission);
 movespeed=1;
 tempspeed=movespeed;
 image_angle = point_direction(x, y, target.x, target.y)-90;
-
+audio_play_sound(snd_helicopter, 10, true);
+audio_play_sound(snd_radio, 10, true);
 
 
 helispawnloc = irandom_range(1,4);

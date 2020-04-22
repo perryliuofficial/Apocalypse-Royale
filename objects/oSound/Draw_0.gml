@@ -10,6 +10,7 @@ draw_set_valign(fa_middle);
 draw_text(x+(sprite_width/2),y-10+(sprite_height/2),"Sound");
 
 draw_set_color(c_gray);
+if global.AUDIO = false {status = "Off"} else {status = "On"}
 draw_text(x+(sprite_width/2),y+10+(sprite_height/2),status);
 
 draw_set_halign(-1);

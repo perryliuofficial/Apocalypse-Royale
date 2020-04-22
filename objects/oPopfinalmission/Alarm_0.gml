@@ -13,6 +13,11 @@ if global.pause = false {
 		ammo -=1;
 		effect_create_above(ef_flare, x, y, 1, c_white);
 		noisemaker = true;
+		playgunsound = irandom(3);
+		if playgunsound = 0{audio_play_sound(snd_gun1, 10, false);}
+		else if playgunsound = 1{audio_play_sound(snd_gun2, 10, false);}
+		else if playgunsound = 2{audio_play_sound(snd_gun3, 10, false);}
+		else{audio_play_sound(snd_gun4, 10, false);}
 		// Add to TV points if within camera radius
 		if distance_to_object(oCircle) < 80 {
 			global.TVscore +=10;
@@ -43,6 +48,11 @@ if global.pause = false {
 		ammo -=1;
 		effect_create_above(ef_flare, x, y, 1, c_white);
 		noisemaker = true;
+		playgunsound = irandom(3);
+		if playgunsound = 0{audio_play_sound(snd_gun1, 10, false);}
+		else if playgunsound = 1{audio_play_sound(snd_gun2, 10, false);}
+		else if playgunsound = 2{audio_play_sound(snd_gun3, 10, false);}
+		else{audio_play_sound(snd_gun4, 10, false);}
 		// Add to TV points if within camera radius
 		if distance_to_object(oCircle) < 150 {
 			global.TVscore +=10;
